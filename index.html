@@ -1,0 +1,542 @@
+<!DOCTYPE HTML>
+<html onselectstart='return false'>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<title>3D旋转相册特效</title>
+	<script src="js/jquery-1.11.3.min.js"></script>
+
+	<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+
+	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+	<style type="text/css">
+	*{ margin:0; padding:0;}
+	body{ /*background:#000;*/ width:960px; /*height:100%;*/ /*overflow:hidden;*/  background-color: pink;
+
+	}
+
+	.zim{
+		color:red;
+		width: 1000px;
+		height: 50px;
+	}
+	.zim h1{
+
+		text-align: center;
+
+	}
+	#wrap{ width:133px; height:200px; margin:25% auto 0;
+		position:relative;
+		top:-100px;
+		transform-style:preserve-3d;
+		transform:perspective(1000px) rotateX(-10deg) rotateY(0deg);
+	}
+	#wrap ul li{
+		list-style:none;
+		width:120px;
+		height:180px;
+		position:absolute;
+		top:0;left:0;
+		border-radius:3px;
+		box-shadow:0 0 10px #fff;
+		background-size:100%;
+
+		transform:rotateY(0deg) translateZ(0px);
+		-webkit-box-reflect:below 10px -webkit-linear-gradient(top,rgba(0,0,0,0) 40%,rgba(0,0,0,.5) 100%);
+	}
+	#wrap p{ width:1200px; height:1200px; position:absolute; border-radius:100%;
+		left:50%; top:100%; margin-left:-600px; margin-top:-600px;
+		background:-webkit-radial-gradient(center center,600px 600px,rgba(50,50,50,1),rgba(0,0,0,0));
+		transform:rotateX(90deg);}
+
+
+		.content{width: 960px;/*border:1px solid black;*/height: 100px;}
+		.wrap1{width:100px; height: 100px; margin:150px auto;perspective:1000px;}
+		.box{position: relative;transform-style: preserve-3d;font-size: 20px;color: #fff;text-align: center;line-height: 100px;transform: rotateX(19deg) rotateY(24deg); animation: rot 20s linear infinite;}  /*匀速 循环*/
+		.box div{width: 100px;height: 100px;position: absolute;transition:transform .5s ease-in;}
+		.box div:nth-child(1){background:red; transform: rotateX(0deg) translateZ(50px) ;}
+		.box div:nth-child(2){background:pink; transform: rotateX(180deg) translateZ(50px) ; }
+		.box div:nth-child(3){background:blue; transform: rotateY(-90deg) translateZ(50px) ;}
+		.box div:nth-child(4){background:yellow; transform: rotateY(90deg) translateZ(50px) ;}
+		.box div:nth-child(5){background:black; transform: rotateX(90deg) translateZ(50px) ;}
+		.box div:nth-child(6){background:orange; transform: rotateX(-90deg) translateZ(50px) ;}
+
+		.wrap1 .box:hover .front1{background:red; transform: rotateX(0deg) translateZ(100px) ;}
+		.wrap1 .box:hover .back1{background:pink; transform: rotateX(180deg) translateZ(100px) ; }
+		.wrap1 .box:hover .left1{background:blue; transform: rotateY(-90deg) translateZ(100px) ;}
+		.wrap1 .box:hover .right1{background:yellow; transform: rotateY(90deg) translateZ(100px) ;}
+		.wrap1 .box:hover .top1{background:black; transform: rotateX(90deg) translateZ(100px) ;}
+		.wrap1 .box:hover .bottom1{background:orange; transform: rotateX(-90deg) translateZ(100px) ;}
+		/*关键帧 旋转suoxie 是下面的意思*/
+
+		section {
+			width: 300px;
+			height: 200px;
+			margin: 100px auto;
+			background: url(images/img-1.jpg) no-repeat;
+			background-size: cover;
+			position: relative;
+			transform-style: preserve-3d;  /* 让父盒子里面的子盒子以3d效果显示 */
+			transition:  5s linear;  /* 匀速  all 是可以省略的， 省略默认的all*/
+		}
+		section:hover {
+			transform: rotateY(360deg);
+		}
+		section div {
+			width: 100%;
+			height: 100%;
+			background: url(images/dog.gif) no-repeat;
+			background-size: cover;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		section div:nth-child(1) {
+			transform: rotateY(0deg)  translateZ(400px);
+		}
+		section div:nth-child(2) {
+			transform: rotateY(60deg)  translateZ(400px);
+		}
+		section div:nth-child(3) {
+			transform: rotateY(120deg)  translateZ(400px);
+		}
+		section div:nth-child(4) {
+			transform: rotateY(180deg)  translateZ(400px);
+		}
+		section div:nth-child(5) {
+			transform: rotateY(240deg)  translateZ(400px);
+		}
+		section div:nth-child(6) {
+			transform: rotateY(300deg)  translateZ(400px);
+		}
+
+		@keyframes rot{
+			0%{transform: rotateX(0deg) rotateY(0deg);}
+			100%{transform: rotateX(360deg) rotateY(360deg);}
+		}
+
+
+
+		.box1{
+			width: 300px;
+			height: 300px;
+			margin:100px auto;
+			position: relative;
+		}
+		.ro{
+			-webkit-animation:qiangge 4s linear infinite;
+		}
+		@-webkit-keyframes qiangge{
+			from{
+				transform:rotate(0deg);
+			}
+			to{
+				transform:rotate(360deg);
+			}
+		}
+		.top11, .bottom11{
+			position: absolute;
+			top:0px;
+			left:0;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			border-radius: 50%;
+
+
+		}
+		.box1 .top11{
+			transition: all 0.5s ease 0s;
+			transform-origin:bottom;
+		}
+		.music{
+			transform:rotateX(180deg);
+		}
+
+
+		.boxq {
+			width: 600px;
+			height: 600px;
+			border: 1px solid #ccc;
+			border-radius: 50%;
+			position: absolute; 
+			left: 50%;
+			margin-left: -300px;
+			top: 2090px;
+			margin-top: -300px;
+			background-image: url(bg.jpg);
+		}
+
+		.sun {
+			position: absolute;
+			width: 50px;
+			height: 50px;
+			background-color: orange;
+			border-radius: 50%;
+			margin-left: -25px;
+			left: 50%;
+			margin-top: -25px;
+			top: 50%;
+
+			box-shadow: 0px 0px 50px orange;
+		}
+
+		.lin1 {
+			width: 100px;
+			height: 100px;
+			border: 1px solid #ccc;
+			border-radius: 50%;
+			margin-left: -50px;
+			margin-top: -50px;
+			animation: rotate 10s linear infinite;
+		}
+
+		.lin1:after {
+			content: "";
+			width: 20px;
+			height: 20px;
+			display: block;
+			border-radius: 50%;
+			background-color: orange;
+			position: absolute;
+			left: -2px;
+			top: 10px;
+		}
+
+		.public {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+		}
+
+
+
+
+		@keyframes rotate {
+			from {
+				transform: rotateZ(0deg);
+			}
+
+			to {
+				transform: rotateZ(360deg);
+			}
+		}
+
+		.lin2 {
+			width: 150px;
+			height: 150px;
+			border: 1px solid #ccc;
+			border-radius: 50%;
+			margin-left: -75px;
+			margin-top: -75px;
+
+			animation: rotate 5s linear infinite;
+		}
+		.lin2:after {
+			content: "";
+			width: 10px;
+			height: 10px;
+			background-color: blue;
+			display: block;
+			border-radius: 50%;
+			position: absolute;
+			left: 25px;
+			top: 10px;
+		}
+
+		.lin3 {
+			width: 230px;
+			height: 230px;
+			border: 1px solid #ccc;
+			border-radius: 50%;
+			margin-left: -115px;
+			margin-top: -115px;
+			animation:  rotate 10s linear infinite;
+		}
+		.lin3 span {
+			width: 20px;
+			height: 20px;
+			display: block;
+			background-color: green;
+			border-radius: 50%;
+			position: absolute;
+			left: 50px;
+			animation: rotate 5s linear infinite;
+		}
+		.lin3 span b {
+			width: 10px;
+			height: 10px;
+			background-color: pink;
+			display: block;
+			border-radius: 50%;
+			position: absolute;
+			left: 25px;
+
+		}
+
+		.lin4  {
+			width: 332px;
+			height: 332px;
+			border: 1px solid #ccc;
+			background: url(asteroids_meteorids.png) no-repeat;
+			border-radius: 50%;
+			margin-left: -161px;
+			margin-top: -161px;
+			animation: rotate 15s linear infinite;
+		}
+
+		.lin4:after {
+			content: "";
+			display: block;
+			width: 10px;
+			height: 10px;
+			background-color: red;
+			border-radius: 50%;
+			position: absolute;
+			left: 120px;
+		}
+
+		.line5 {
+			width: 450px;
+			height: 450px;
+			border: 1px solid #ccc;
+			border-radius: 50%;
+			margin-left: -220px;
+			margin-top: -220px;
+			animation: rotate 10s linear infinite;
+		}
+
+		.line5 span {
+			width: 30px;
+			height: 30px;
+			background-color: blue;
+			border-radius: 50%;
+			display: block;
+			position: absolute;
+			left: 120px;
+		}
+
+		.line5 span  b {
+			display: block;
+			width: 40px;
+			height: 40px;
+			border: 5px solid #ccc;
+			border-radius: 50%;
+			transform: skew(45deg);
+			position: absolute;
+			left: -6px;
+			top: -10px;
+		}
+
+
+		.ziti{
+			color: red;
+			font-size: 50px;
+			position: absolute;
+			top:1133px;
+			left: 195px;
+
+		}
+		.ziti li{
+			list-style: none;
+		}
+	</style>
+
+</head>
+<body>
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="./qcsj/shop.html">案例1</a>
+				<a class="navbar-brand" href="./csgl/login.html">案例2</a>
+				<a class="navbar-brand" href="./mzwz/index.html">案例3</a>
+				<a class="navbar-brand" href="./bdhf/百度换背景.html">案例4</a>
+				<a class="navbar-brand" href="./cart/index.html">案例5</a>
+				<a class="navbar-brand" href="#">后续添加</a>
+
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+
+
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+	<div class=ziti>
+		<ul>
+			<li>点</li>
+			<li>击</li>
+			<li>音</li>
+			<li>乐</li>
+			<li>盒</li>
+		</ul>
+	</div>
+	<div class="zim">
+		<h1>电脑查看效果更好!!!</h1>
+	</div>
+	<div id="wrap">
+		<ul>
+			<li style="background-image:url(img/1.jpg);"></li>
+			<li style="background-image:url(img/2.jpg);"></li>
+			<li style="background-image:url(img/3.jpg);"></li>
+			<li style="background-image:url(img/4.jpg);"></li>
+			<li style="background-image:url(img/5.jpg);"></li>
+			<li style="background-image:url(img/6.jpg);"></li>
+			<li style="background-image:url(img/7.jpg);"></li>
+			<li style="background-image:url(img/8.jpg);"></li>
+			<li style="background-image:url(img/9.jpg);"></li>
+			<li style="background-image:url(img/10.jpg);"></li>
+			<li style="background-image:url(img/11.jpg);"></li>
+		</ul>
+		<p></p>
+	</div>
+
+	<div class="content">
+		<div class="wrap1">
+			<div class="box">
+				<div class="front">正面</div>
+				<div class="back">反面</div>
+				<div class="left">左面</div>	
+				<div class="right">右面</div>
+				<div class="top">上面</div>
+				<div class="bottom">底面</div>
+
+				<div class="front1">正面</div>
+				<div class="back1">反面</div>
+				<div class="left1">左面</div>	
+				<div class="right1">右面</div>
+				<div class="top1">上面</div>
+				<div class="bottom1">底面</div>
+			</div>
+		</div>
+	</div>
+	<section >
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</section>
+	<audio src="music.mp3"></audio>
+	<div class="box1">
+
+		<div class="bottom11"><img src="musicb.jpg" alt=""></div>
+		<div class="top11"><img src="musict.jpg" alt=""></div>
+	</div>
+
+	<div class="boxq">
+
+		<div class="sun"></div>
+		<div class="lin1 public"></div>
+		<div class="lin2 public"></div>
+		<div class="lin3 public">
+			<span>
+				<b></b>
+			</span>
+		</div>
+
+		<div class="lin4 public"></div>
+
+		<div class="line5 public">
+			<span>
+				<b></b>
+			</span>
+		</div>
+
+	</div>
+
+
+	<script>
+		$(document).ready(function() {
+			var flag=1;
+			$(".top11").click(function(event) {
+				if(flag==1)
+				{
+					$(this).addClass('music');
+					$(".bottom11").addClass('ro');
+
+					flag=0;
+					$("audio")[0].load();
+					$("audio")[0].play();
+
+				}
+				else
+				{
+					$(this).removeClass('music');
+					flag=1;
+					$("audio")[0].pause();
+					$(".bottom11").removeClass('ro');
+
+
+				}
+			});
+		});
+
+
+
+
+		$(function(){
+			var oL = $('#wrap ul li').size();
+			var Deg = 360/oL;
+			var xDeg = 0,yDeg = -10,xs = 0,ys = 0,p=null;
+
+			for (var i=oL-1;i>=0;i--)
+			{
+				
+				$('#wrap ul li').eq(i).css({
+					transition:"1s "+(oL-i)*0.15+"s transform,.5s "+(1+oL*0.15)+"s opacity",
+					'transform':'rotateY('+Deg*i+'deg) translateZ(350px)'
+				});
+			}
+
+			
+			$(document).mousedown(function(e){
+				clearInterval(p);
+				var x1 = e.clientX;
+				var y1 = e.clientY;
+				$(this).bind('mousemove',function(e){
+					xs = e.clientX - x1;
+					ys = e.clientY - y1;
+					x1 = e.clientX;
+					y1 = e.clientY;
+					xDeg += xs*0.3;
+					yDeg -= ys*0.1;
+					console.log( xs )
+					$('#wrap').css('transform',"perspective(800px) rotateX("+yDeg+"deg) rotateY("+xDeg+"deg)");
+				});
+			}).mouseup(function(){
+				$(this).unbind('mousemove');
+				p = setInterval(function(){
+					if(Math.abs(xs)<0.5&&Math.abs(ys)<0.5){clearInterval(p)};
+					xs = xs*0.95;
+					ys = ys*0.95
+					xDeg += xs*0.3;
+					yDeg -= ys*0.1;
+					$('#wrap').css('transform',"perspective(800px) rotateX("+yDeg+"deg) rotateY("+xDeg+"deg)");
+					console.log(xs+','+ys);
+				},30);
+			});
+
+		});
+
+
+	</script>
+</body>
+</html>
