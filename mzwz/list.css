@@ -1,0 +1,263 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.daohang{
+	 width:1349px;
+	 height:81px;
+	 /*border:1px solid red;*/
+}
+
+.dh_m{
+	width: 777px;
+	height: 80px;
+	/*background:pink;*/
+	float:left;
+	margin-left:20px;
+}
+.dh_m ul{
+	line-height:80px;
+}
+.dh_m ul li{
+	float: left;
+	width: 58px;
+	height: 80px;
+}
+.dh_m ul li a{
+	text-decoration:none;
+	color:#333;
+	font-weight:400;
+}
+.dh_m ul li a:hover{
+	color:#0AC1ED;
+	transition:all 0.3s;
+}
+.dh_m ul li:first-child{
+	margin-left:10px;
+}
+
+
+/*详情部分头部*/
+.xq{
+	width: 1349px;
+	height: 2000px;
+	/*background:pink;*/
+}
+.sy{
+	 width: 1240px;
+	 height: 40px;
+	 margin-left:60px;
+	 line-height:40px;
+	 /*background:yellow;*/
+}
+.sy a{
+	text-decoration:none;
+}
+/*品牌 屏幕尺寸 机身内存*/
+.a11 ul li{
+	float: left;
+	margin-left:60px;
+}
+.a11 ul a{
+	text-decoration:none;
+	color:#333;
+	line-height:46px;
+}
+.a11 ul a:hover{
+	color:#00C3F5;
+}
+
+/*商品详情*/
+.xia2{
+	width: 1240px;
+	height: 36px;
+	/*background: yellow;*/
+	float: left;
+	margin-left: 60px;
+	margin-top: 90px;
+}
+.xia3{
+	width: 1240px;
+	height: 338px;
+	/*background: green;*/
+	float: left;
+	margin-left:60px;
+	margin-top:10px;
+}
+.xia3 ul li{
+	width: 245px;
+	height: 338px;
+	border:1px solid #ddd;
+	float: left;
+}
+.xia3 a{
+	text-decoration:none;
+}
+.xia3_1{
+	width: 225px;
+	height: 180px;
+	/*background:pink;*/
+	margin-top:25px;
+	margin-left:10px;
+}
+.xia3_1 img{
+	width: 180px;
+	height: 180px;
+	margin-left:20px;
+}
+.xia3_2{
+	width: 225px;
+	height: 73px;
+	margin-top:30px;
+	/*background:orange;*/
+	margin-left:10px;
+}
+.xia3_2 h5,h6,p{
+	text-align:center;
+}
+.xia3_2 h5{
+	color:#444;
+}
+.xia3_2 h6{
+	color: #999
+}
+.xia3_2 p span:first-child{
+	color:red;
+	font-size:12px;
+}
+.xia3_2 p span:last-child{
+	color:red;
+	font-size:16px;
+}
+/********** 图片显示 ********/
+
+/*********** 底部 ********/
+/* 底部上 */
+.bott .zuo .ul1 li{
+	width: 240px;
+	height: 58px;
+	float: left;
+	font-size:12px;
+
+}
+.bott .zuo .ul2 li{
+	width: 240px;
+	height: 58px;
+	float: left;
+	font-size:12px;
+
+}
+.right a{
+	text-decoration:none;
+	color:#333;	
+	font-size:16px;
+}
+/* 底部下 */
+.bott-xia{
+	width:1240px;
+	height:53px;
+	margin-left:60px;
+}
+.bott-xia .zuo ul{
+	width: 1002px;
+	height: 18px;
+}
+
+.bott-xia .zuo li{
+	float: left;
+}
+.bott-xia .zuo a{
+	text-decoration:none;
+	color:#999;
+}
+.bott-xia .zuo a:hover{
+	color:#00C3F5;
+	transition:all 0.1s;
+}
+
+/* 底部下半部分左边下边 */
+.bott-xia .zuo .zuoxia{
+	width: 1040px;
+	height: 35px;
+	margin-top:-5px;
+	color:#999;
+	overflow:hidden;
+}
+.bott-xia .zuo .zuoxia a{
+	float: left;
+	line-height:35px;
+	color:#999;
+	text-decoration:none;
+	font-size:12px;
+}
+.bott-xia .zuo .zuoxia a:hover{
+	color:#00C3F5;
+}
+.bott-xia .zuo .zuoxia .a1{
+	margin-left:15px;
+}
+.bott-xia .zuo .zuoxia .a2{
+	margin-left:10px;
+}
+/*底部下半部分左边下边三个图片*/
+.zuoxia .ul-zx{
+	width:100px;
+	height: 18px;
+	margin-top:6px;
+}
+.zuoxia .ul-zx .li1{
+	width: 20px;
+	height: 22px;
+	float:right;
+}
+.zuoxia .ul-zx .li2{
+	width: 20px;
+	height: 22px;
+	float:right;
+}
+.zuoxia .ul-zx .li3{
+	width: 20px;
+	height: 22px;
+	float:right;
+}
+/*底部下半部分右边*/
+.bott-xia .by{
+	float:right;
+	width: 130px;
+	height: 27px;
+	margin-right:30px;
+	margin-top:20px
+}
+.you1{
+	position:relative;
+    top: 38px;
+    left: 45px;
+}
+.you1 .li1{
+	width: 22px;
+	height: 25px;
+	/*border:1px solid red;*/
+	float:left;
+}
+.you1 .li2{
+	width: 22px;
+	height: 25px;
+	/*border:1px solid red;*/
+	float:left;
+	margin-left:15px;
+}
+.you1 .li3{
+	width: 22px;
+	height: 25px;
+	/*border:1px solid red;*/
+	float:left;
+	margin-left:15px;
+}
+.xia3_1 .act{
+	height: 110%;
+	width:88%;
+	position:relative;
+	left:-9px;
+	top:-9px;
+}

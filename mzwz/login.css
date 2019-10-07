@@ -1,0 +1,165 @@
+*{margin: 0;padding: 0;list-style:none;}
+
+.logo{
+	width: 100%;
+	height: 68px;
+	/*background:green;*/
+	margin:0 auto;
+}
+.logo img{
+	width: 110px;
+	height: 20px;
+	margin-top:25px;
+	margin-left:65px;
+}
+.midd{
+	width: 1349px;
+	height: 750px;
+	background:url(./img/beijing.jpg);
+}
+
+
+form{
+	width: 368px;
+	height: 408px;
+	background: white;
+	position:relative;
+	float: right;
+	top:105px;
+	right:250px;
+}
+.f_top{
+	margin-top:60px;
+	text-align:center;
+}
+.f_top a{
+	font-size: 18px;
+
+}
+.f_top a:first-child{
+	color:#999;
+	text-decoration: none;
+}
+.f_top a:first-child:hover{
+	color:#333;
+}
+.f_top a:nth-child(2){
+	color:#333;
+	text-decoration: none;
+}
+
+.f_top a:last-child{
+	color:#43ACE9;
+	text-decoration: none;
+
+}
+.f_top a:last-child:hover{
+	color:#147DF0;
+}
+
+.f_top4 a{
+	color:#32A5E7;
+	font-size:14px;
+}
+
+/*底部*/
+.btt{
+	width: 1350px;
+	height: 131px;
+	background:white;
+}
+
+.bz{
+	width: 445px;
+	height: 50px;
+	/*background:red;*/
+	float:left;
+	margin-left:160px;
+	margin-top:20px;
+}
+.bz ul li{
+	float: left;
+	line-height:50px;
+
+} 
+.bz ul .li1{
+	margin-left:10px;
+	/*line-height:50px;*/
+} 
+.bm{
+	width: 300px;
+	height: 50px;
+	/*background: pink;*/
+	float:left;
+	margin-top:20px;
+	/*text-align:center;*/
+	line-height:50px;
+}
+.bm .s1{
+	margin-left:40px;
+}
+.bm .s2{
+	margin-left:10px;
+}
+.bm button{
+	margin-left:10px;
+}
+.by{
+	width: 135px;
+	height: 40px;
+	/*background: yellow;*/
+	float:left;
+	margin-top:20px;
+	margin-left:100px;
+}
+.by .you li{
+	width: 35px;
+	height: 35px;
+	/*background: pink;*/
+	/*border:1px solid red;*/
+	float: left;
+	margin-left:9px;
+	margin-top:5px;
+}
+.you .li1{
+	background:url(./img/w.png) no-repeat -217px -91px;
+}
+.you .li1:hover{
+	background:url(./img/w.png) no-repeat -217px -137px;
+}
+.you .li2{
+	background:url(./img/w.png) no-repeat -300px -91px;
+}
+.you .li2:hover{
+	background:url(./img/w.png) no-repeat -300px -137px;
+}
+.you .li3{
+	background:url(./img/w.png) no-repeat -342px -90px;
+}
+.you .li3:hover{
+	background:url(./img/w.png) no-repeat -342px -137px;
+}
+.btt_xia{
+	width: 1150px;
+	height: 30px;
+	/*background: pink;*/
+	float: left;
+	margin-left:160px;
+	margin-top:10px; 
+}
+.btt_xia span{
+	font-size:12px;
+}
+.btt_xia a{
+	font-size:12px;
+	text-decoration:none;
+	color:#555;
+}
+.btt_xia img{
+	width: 16px;
+	height: 15px;
+	margin-top:-2px;
+	margin-left:2px;
+}
+
+
