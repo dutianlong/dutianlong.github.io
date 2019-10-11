@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!-- saved from url=(0097)file:///C:/Users/baby/Desktop/vue/%E5%8F%A6%E4%B8%80%E4%B8%AA%E8%AF%BE%E7%A8%8B/web/resource.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<title>Document</title>
+	<script src="file:///C:/Users/baby/Desktop/vue/%E5%8F%A6%E4%B8%80%E4%B8%AA%E8%AF%BE%E7%A8%8B/web/node_modules/vue/dist/vue.js"></script>
+	<script src="file:///C:/Users/baby/Desktop/vue/%E5%8F%A6%E4%B8%80%E4%B8%AA%E8%AF%BE%E7%A8%8B/web/node_modules/vue-resource/dist/vue-resource.js"></script>
+	<link rel="stylesheet" href="./Document_files/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+	<div id="app" class="container"><h1>resource插件讲解</h1> <a href="javascript:;" class="btn btn-primary">get请求</a> <a href="javascript:;" class="btn btn-primary">post请求</a> <a href="javascript:;" class="btn btn-primary">jsonp请求</a> <div>
+			
+		</div></div>
+	<script>
+		new Vue({
+			el:"#app",
+			data:{
+
+			},
+			methods:{
+				get:function(){
+					this.$http.get("package.json",{
+						params:{
+							userid:"123"
+						},
+						headers:{
+							token:"adfg"
+						}
+					}).then(res=>{
+						this.msg=res.data;
+					},error=>{
+						this.msg=error;
+					})
+				}
+			}
+		});
+	</script>
+
+</body></html>
