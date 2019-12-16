@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>系统登录 - 超市账单管理系统</title>
+<link rel="icon" href="../as.jpg">
+<link type="text/css" rel="stylesheet" href="css/style.css" />
+</head>
+<body class="blue-style">
+	<div style="width: 100px; height: 30px; background-color: red; position: fixed;right: 0px;top:50%;text-align: center;line-height: 30px;font-size: 21px; border-radius: 8px;z-index: 999;"><a href="https://dutianlong.github.io/duwei1/index.html" style="text-decoration: none;"><span style="color: yellow;">返回首页</span></a></div>
+<div id="login">
+	<div class="icon"></div>
+	<div class="login-box">
+		<form >
+			<dl>
+				<dt>用户名：</dt>
+				<dd><input type="text" name="userName" class="input-text" placeholder="随便输入" /></dd>
+				<dt>密　码：</dt>
+				<dd><input type="password" name="passWord" class="input-text"  placeholder="随便输入" /></dd>
+                <dt>验证码：</dt>
+				<dd><input type="password" name="vocde" class="input-text" />
+                    <img src="images/CreateCode.gif" width="70" height="28" />
+                </dd>
+                <dt></dt>
+				<dd>
+                <select > 
+                        <option selected="" value="None">不保存</option> 
+                        <option value="">保存1小时</option> 
+                        <option value="">保存1天</option> 
+                        <option value="">保存1周</option>
+                 </select>
+                </dd>
+			</dl>
+			<div class="buttons">
+				<a  name="submit"  class="input-button" href="./admin_index.html" style="text-decoration: none;">登录系统</a>
+				<input type="reset" name="reset" value="重　　填" class="input-button" />
+			</div>
+		</form>
+	</div>
+</div>
+</body>
+</html>

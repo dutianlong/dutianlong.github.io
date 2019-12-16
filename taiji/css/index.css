@@ -1,0 +1,43 @@
+	.box{width: 400px;height: 400px;display: flex;margin:0 auto;margin:20px auto;}
+		.left{width: 200px;height: 400px;background-color: black;border-radius:200px 0px 0px 200px;}
+		.right{width: 200px;height: 400px;background-color: #fff;border:1px solid red;border-radius: 0px 200px 200px 0px; }
+		.box1{width: 400px;height: 400px;background-color: red;display: flex;margin:0 auto;margin:20px auto;}
+		.left1{width: 200px;height: 400px;background-color: black;border-radius:200px 0px 0px 200px;}
+		.right1{width: 200px;height: 400px;background-color: #fff;border:1px solid red;border-radius: 0px 200px 200px 0px; }
+		.l1{width: 60px;height: 60px;background-color: white;position: relative;top:0;left: 100px;border-radius: 50%;border:70px solid black; animation: change 1s infinite alternate;transform-origin: 50% 0%;}
+		.l2{width: 60px;height: 60px;background-color: black;position: relative;top:200;left: 100px;border-radius: 50%; border:70px solid white;transform-origin: 50% 100%;animation: change1 1s infinite alternate;}
+		.l3{width: 60px;height: 60px;background-color: white;position: relative;top:0;left: 100px;border-radius: 50%;border:70px solid black; }
+		.l4{width: 60px;height: 60px;background-color: black;position: relative;top:200;left: 100px;border-radius: 50%; border:70px solid white; }
+		/*.box{background:linear-gradient(to right,black 50%,white 50%);}*//*一行代码写渐变色*/
+		.box1{width: 400px;height: 400px; background: radial-gradient(black 50%, yellow 50%);border:1px solid red;animation: rotate 2s infinite linear;}/*从里往外变*/
+		@keyframes change{
+			from{
+				transform: scale(0.5)
+			}
+			to{
+				transform: scale(1.5)
+			}
+		}
+		@keyframes change1{
+			from{
+				transform: scale(1.5)
+			}
+			to{
+				transform: scale(0.5)
+			}
+		}
+		@keyframes rotate{
+			from{
+				transform: rotate(0deg);
+			}
+			to{
+				transform: rotate(360deg);
+				
+			}
+		}
+
+		h1{
+			color: red;
+			margin: 100px 40%;
+
+		}

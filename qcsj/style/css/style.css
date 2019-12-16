@@ -1,0 +1,1434 @@
+*{font-family:'微软雅黑';}
+.row{padding: 0;margin: 0;}
+ul,li{padding: 0;margin: 0;list-style:none;}
+/*顶部*/
+.header{
+	width: auto;
+	height: 38px;
+	background: #F4F5F9;
+
+}
+.header a{
+	text-decoration: none;
+	 color:grey ;
+	}
+.header a:hover{
+	text-decoration: none ;
+	color:#eb6118 ;
+}
+.headtop{
+	width: 1190px;
+	height: 38px;
+	margin: 0 auto;
+}
+.headleft a{
+	font-size: 12px;
+	line-height: 38px;
+	margin-right: 20px;
+}
+.headleft{
+	float: left;
+}
+.headright span{
+	font-size: 12px;
+	line-height: 38px;
+	margin-right: 10px;
+}
+.headright{
+	float: right;
+}
+.headright img{
+	width:20px;
+}
+.ling{
+	padding: 0 3px;
+	width: 16px;
+	height: 16px;
+	margin-top:-5px;
+	background: #fc6053;
+	color:#fff;
+	border-radius:10px;
+}
+
+/*导航部分*/
+.navbar{
+	background: #fff;border:0;
+	}
+@media(min-width:960px){
+	.container-fluid .navbar-dbl{
+		width: 1190px; 
+		margin: 0 auto !important;
+		margin-left: 170px;
+
+	}
+	.navbar .container-fluid .navbar-header{
+		height:122px;
+		padding-top:27px;
+
+	}
+
+	.navbar-left .form-control{
+		border-radius: 30px
+	}
+	.collapse li{
+		margin-top: 38px;
+		margin-left: 40px;
+		line-height: 122px;
+		text-align:center;
+		font-size:16px;	
+		position:relative;
+
+	}
+	.nav-dh li .sanjiao{
+		width: 10px;
+		height: 10px;
+		background: url('../images/icons/menu-ico.png');
+		position:absolute;
+		right:0px;
+		bottom:20px;
+	}
+	.nav-dh li a:hover > div{
+		width: 10px;
+		height: 10px;
+		background: url('../images/icons/menu-ico-active.png');
+		
+	}
+		
+	.nav-dh li a{
+		color:grey !important;
+	}
+	.nav-dh li a:hover {
+		color:#eb6118 !important;
+
+	}
+	/*--------二级导航--------*/
+	
+
+	.downad{
+		height: 180px ;
+		width: 1550px;
+		position: absolute;
+		top: 95px;left: 150px;
+		z-index: 88;		
+		box-sizing: border-box;
+		background-color: #fff;
+		display: none;
+		border-radius:10px;
+	}
+	.downad .pic{
+		text-align:center;
+	}
+	.downad span{
+		padding-left: 10px;
+	}
+	.downad_content{
+		overflow: hidden;
+		text-align: center;
+		background-color: #fff;
+		float: left;
+	}
+	.downad .pic{
+		float: left;
+		margin: 0 35px;
+	}
+	.downad .pic li{
+		margin-top: 0;
+	}
+	.downad .pic li img{
+		width: 80px;
+		height: 80px;
+	} 
+
+	/*手机隐藏菜单*/
+	/*--------------------导航部分结束--------------------*/
+
+	/*--------------------shop页面中间部分--------------------*/
+	/*轮播图*/
+	/*圆点设置*/
+	#carousel-example-generic{
+		position:relative;
+		margin-top: -20px !important;
+
+	}
+
+	.carousel-indicators{
+		width: 100%;
+		position:absolute;
+		bottom:5px;left: 30%;
+		z-index:99;
+	}
+	.carousel-indicators li{
+		width: 10px;
+		height: 10px;
+		border-radius:50%;
+		display:inline-block;
+		background: grey;
+		cursor:pointer;
+		border:1px solid grey;
+		margin: 5px 5px;
+	}
+	.carousel-indicators .active{
+		background:grey;
+	    width: 15px;
+	    height: 15px;
+	    border-radius:50%;
+	    display:inline-block;
+	    margin: 2.5px 5px;
+	}
+
+	/*--------------------主题部分(轮播图下方)--------------------*/
+	/*放大有超链接的texiao去掉a下划线*/
+	.texiao a{text-decoration: none;}
+
+	.outcontainer{background:#F4F5F9;}
+	.container{width: 1190px;}
+	/*明星机型*/
+	.zi{margin-top: 50px;
+		margin-bottom: 50px;
+		font-size:22px;
+		color:#434343;
+		display:inline-block;
+	}
+	/*方框大小*/
+	.mxjx{
+		margin-left: -13px;
+		background:white;
+		width: 1190px;
+		height: 610px;
+		border-radius:10px;
+	}
+	/*清除相关pd和mg,并清除pd-right的右侧border*/
+	.pd-left{padding: 0;}
+	.pd-right{padding: 0;margin: 0;border:0 !important;}
+	/*清除保障部分最右侧的border*/
+	.w1bg{border:0 !important;}
+	/*voga v*/
+	.voga{
+		width: 594px;
+		height: 305px;
+		border-right:1px solid #E3E3E3;
+		cursor: pointer;
+		
+	}
+	.voga-left{
+		width: 300px;
+		height: 300px;
+		position:relative;
+	}
+	.voga-bt{
+		font-size: 16px;
+		text-align:center;
+		padding: 80px 0px 15px;
+		color:#7e7e7e;
+	}
+	.voga-ms{
+		font-size: 14px;
+		text-align:center;
+		padding: 0px 0px 60px;
+		color:#9d9d9d;
+	}
+	.voga-jg{
+		font-size: 24px;
+		text-align:center;
+		margin-top: -15px;
+		color:#ff5e3a;
+	}
+	.voga-left img{
+		position:absolute;
+		top:30px;
+		left:320px;
+		width: 180px;
+		height: 250px;
+	}
+
+	/*鼠标放置效果*/
+	.texiao{
+		/*鼠标移入放大特效时间*/
+		transition: all 0.5s;
+	}
+
+	
+	.texiao:hover {-webkit-transform:scale(1);transform:scale(1.011);color:#ff5e3a;}
+	
+	/*c3*/
+	.c3-right{margin-left: 12px;}
+	/*c3/w1/t2/t5 通用*/
+	.c3{
+		width: 297px;
+		height: 305px;
+		border-right:1px solid #E3E3E3;
+	}
+	.c3 img{
+		margin-top: 30px;
+		margin-left: 20px;
+		width: 200px;
+		height: 200px;
+	}
+	.c3-bt{
+		font-size: 16px;
+		text-align:left;
+		margin-top: 15px;
+		margin-left: 15px;
+		color:#7e7e7e;
+	}
+	.c3-ms{
+		font-size: 12px;
+		text-align:left;
+		margin-top:8px;
+		margin-left: 15px;
+		position:relative;
+		color:#9d9d9d;
+	}
+	.c3-jg{
+		font-size: 24px;
+		position:absolute;
+		right:20px;
+		bottom:20px;
+		color:#ff5e3a;
+	}
+	/*n20*/
+	.n20{
+		width: 297.5px;
+		height: 610px;
+		position:relative;
+		border:0;
+	}
+	.n20-bt{
+		font-size: 16px;
+		text-align:center;
+		padding: 50px 0px 10px 0px;
+		color:#7e7e7e;
+	}
+	.n20-ms{
+		font-size: 14px;
+		text-align:center;
+		margin-top: -10px;
+		color:#9d9d9d;
+	}
+	.n20-jg{
+		font-size: 24px;
+		text-align:center;
+		color:#ff5e3a;
+	}
+	.n20 img{
+		position:absolute;
+		top:205px;
+		right: 60px;
+		width: 180px !important;
+		height: 250px !important;
+		padding: 0 !important;
+	}
+	.n20 .qbjx{
+		width: 170px;
+		height: 50px;
+		background: #ec642b;
+		border-radius:5px;
+		position:absolute;
+		bottom:40px;
+		right: 60px;
+	}
+	.n20 a{
+		text-align:center;
+		line-height: 50px;
+		text-decoration: none;
+		color:#fff;
+		font-size:16px;
+	}
+	.n20 a span{
+		display:inline-block;
+		font-size: 20px;
+		position:absolute;
+		top:0px;
+	}
+	/*border*/
+	.row-border{
+		border-bottom:1px solid #E3E3E3;
+	}
+
+	/*--------------------热门配件--------------------*/
+	.zi2{
+		margin-top: 50px;
+		margin-bottom: 50px;
+		font-size:22px;
+		color:#434343;
+		width: 1190px;
+		display:inline-block;
+	}
+	.rmpj{
+		background:white;
+		width: 1190px;
+		height: 305px;
+		border:1px solid #F4F5F9;
+		border-radius:10px;
+		margin-left: -14px;
+	}
+	.zi2 .qbpj{
+		float: right;
+		margin-right: 40px;
+	}
+	.zi2 a{
+		color:#434343;
+		font-size: 14px;
+		width: 109px;
+		height: 40px;
+		text-decoration: none;
+	}
+	.zi2 a div{
+		background-image:url('../images/icons/icon_right.png');
+		background-position:0 0px;
+		width: 10px;
+		height: 20px;
+		display:block;
+		float: right;
+		margin-top: 7px;
+	}
+	/*PC端手机样式隐藏*/
+	.qbjx-sj{display:none;}
+	.qbpjsj{display:none;}
+	/*
+	知识点:使用 > 同时使子级元素和父级元素同时产生某种效果
+	*/
+	.zi2 a:hover > div{
+		background-position:-10px 0px;
+	}
+	.zi2 a:hover{
+		color:#ec642b;
+	}
+	.col-md-3{
+		width: 25%;
+		height: 305px;
+		border-right:1px solid #E3E3E3;
+	}
+	
+	.col-md-3 img{
+		width: 200px;
+		height: 200px;
+		margin-top: 20px;
+		margin-left: 20px;
+	}
+	.col-md-3 .pjbt{
+		font-size: 16px;
+		text-align:left;
+		margin-top: 20px;
+		margin-left: 20px;
+		color:#7e7e7e;
+	}
+	.col-md-3 .pjms{
+		font-size: 12px;
+		text-align:left;
+		padding: 4px 20px 0px;
+		position:relative;
+		color:#9d9d9d;}
+	.col-md-3 .pjjg{
+		font-size: 24px;
+		position:absolute;
+		right:30px;
+		bottom:25px;
+		color:#ff5e3a;
+	}
+	/*--------------------首页内容区域结束--------------------*/
+
+	/*--------------------列表页--------------------*/
+	/*PC端隐藏hr*/
+	.listhr{display:none;}
+	/*列表内容区域*/
+	.listbody{
+		width: 1190px;
+		height: 750px;
+		border:1px solid #DDD;
+		background: #fff;
+		border-radius:10px;
+		margin-top: 50px;
+		margin-left: -15px;
+	}
+	/*单个商品区域*/
+	.listone{
+		width: 396px;
+		height: 374px;
+		position:relative;
+		border-right:1px solid #DDD;
+
+	}
+	/*商品图片*/
+	.listone .listsp{
+		width: 210px;
+		height: 210px;
+		margin-top: 34px;
+		margin-left: 75px;
+
+	}
+	/*新品图片*/
+	.listone .xinpin{
+		width: 48px;
+		height: 48px;
+		position:absolute;
+		top: 10px;
+		right:10px;
+	}
+	/*标题*/
+	.listone .listbt{
+		width: 350px;
+		height: 28px;
+		font-size: 16px;
+		color:#505050;
+		margin-top: 10px;
+		text-align:center;
+
+	}
+	/*描述*/
+	.listone .listms{
+		width:372;
+		height: 20px;
+		font-size: 13px;
+		color:#9fa0a0;
+		margin-top: 10px;
+		text-align:center;
+	}
+	/*价格*/
+	.listone .listjg{
+		width: 372px;
+		height: 30;
+		font-size: 20px;
+		color:#EB6118;
+		margin-top: 10px;
+		text-align:center;
+	}
+	/*去除左侧底部重复的border*/
+	.qiansan{
+		border-bottom:1px solid #DDD;
+	}
+	.youce{
+		border-right:0;
+	}
+
+	/*---------------buy商品详情购物页面--------------*/
+	.buyhr{
+		margin-top: 5px;
+
+	}
+	.buycontainer{
+		background: #fff;
+
+	}
+	.inlength{
+		padding: 0;margin: 0;
+		width: 1190px;
+	}
+	/*------鼠标放大镜------*/
+	.simgs{
+	width: 400px;
+	height: 400px;
+	position: relative;
+	/*border:1px solid grey;*/
+	}
+	/*放大后图片显示的位置及样式*/
+	.bimgs{
+		width:400px;
+		height: 400px;
+		position:absolute;
+		top:0px;
+		left:420px;
+		overflow:hidden;
+		display:none;
+		z-index:100;
+
+	}
+	/*鼠标放置小图片后显示的像素粒效果*/
+	.xs{
+		width: 160px;
+		height: 160px;
+		background: url(../images/buy/bg.png);
+		position:absolute;
+		top:0;
+		left:0;
+		display:none;
+	}
+	/*设置多张图片排列位置及样式*/
+	.imgs{
+		width: 400px;height: 80px;
+		margin-top: 20px;
+		margin-left: 5px;
+
+	}
+	.imgs li{
+		width: 60px;height: 60px;
+		/*border:1px dashed pink;*/
+		float:left;
+		margin-right: 5px;
+	}
+	.buyborder{
+		height: 672px;
+		width: 590px;
+	}
+	/*立即分享*/
+	.share{
+		margin-top: 650px;
+		margin-left: -20px;
+		color:#7e7e7e;
+		font-size: 12px;
+		
+	}
+	.sharewz{
+		width: 100px;
+		height: 20px;
+	}
+	.sharewz div{
+		float: left;
+	}
+	.shareimgs{
+		float: left;
+		width: 80px;
+		margin-left: 60px;
+		height: 20px ;
+		margin-top: -17px;
+		
+	}
+	/*定位图片位置*/
+	.sina{
+		width: 20px;
+		height: 17px;
+		background: url(../images/buy/share_ico.png)0 -96px no-repeat;
+	}
+	.tqq{
+		width: 20px;
+		height: 16px;
+		background: url(../images/buy/share_ico.png)0 -144px no-repeat;
+	}
+	.weixin{
+		width: 20px;
+		height: 16px;
+		background: url(../images/buy/share_ico.png)0 -1809px no-repeat;
+	}
+	/*----右侧购买详情----------*/
+	.buyxq{
+		float: left;
+		width: 507px;
+		height: 667px;
+		margin-left: 30px;
+		border-left:1px solid #E0E0E0;
+	}
+	.buytop{
+		width: 507px;
+		height: 530px;
+		margin-left: 30px;
+		border-bottom:1px solid #EEEEEE;
+	}
+	.buybt{
+		font-size: 24px;
+		color:rgb(50, 50, 50)
+	}
+	.buyms{
+		font-size: 12px;
+		color:#7e7e7e;
+		margin-top: 7px;
+	}
+	.buyms2{
+		font-size: 12px;
+		color:#7e7e7e;
+		border-bottom:1px solid #EEEEEE;
+		padding-bottom: 10px;
+	}
+	.buyjg{
+		height: 60px;
+		margin-left: 10px;
+		line-height:60px;
+		font-size: 28px;
+		color:#eb6118;
+		font-weight: bold;
+	}
+	.buybuy{
+		border-top:1px solid #EEEEEE;
+		border-bottom:1px solid #EEEEEE;
+		height: 41px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+
+	}
+	.buyxl{
+		float: left;
+		font-size: 12px;
+		color:#7e7e7e;
+	}
+	.buyxl span{
+		font-size: 12px;
+		color:#eb6118
+	}
+	.buypj{
+		float: left;
+		font-size: 12px;
+		color:#7e7e7e;
+		margin-left: 75px;
+	}
+	.buypj span{
+		font-size: 12px;
+		color:#eb6118;
+	}
+	/*---配置选择部分----*/
+	.xzys{
+		width: 350px;
+		height: 83px;
+	}
+	.yanse{
+		font-size: 12px;
+		color:#7e7e7e;
+		margin-top: 10px;
+		margin-bottom: 10px;
+
+	}
+	
+	.ygl{
+		float: left;
+		width: 142px;
+		height: 46px;
+		border:1px solid #EEE;
+		cursor:pointer;
+		margin-right: 10px;
+	}
+	.duyiwuer{
+		border:1px solid #ff5e3a;
+	}
+	.ygl img{
+		margin-top: -5px;
+		margin-left: 20px;
+		width: 30px;
+		height: 30px;
+	}
+	.ygl span{
+		line-height:46px;
+		text-align:center;
+		font-size: 14px;
+		margin-left: 20px;
+		color:#7e7e7e;
+	}
+	
+	/*--选择内存/系统/套餐--*/
+	.xznc{
+		width: 350px;
+		height: 83px;
+		
+	}
+	.neicun{
+		font-size: 12px;
+		color:#7e7e7e;
+		margin-bottom: 10px;
+	}
+
+	.btnnc{
+		float: left;
+		width: 142px;
+		height: 46px;
+		border:1px solid #eb6118;
+		text-align:center;
+		line-height:46px;
+		font-size: 14px;
+		color:#7e7e7e;
+		cursor:pointer;
+	}
+	/*购买下方部分*/
+	.buydown{
+		width: 507px;
+		margin-left: 30px;
+	}
+	/*--购买点击--*/
+
+	.goumai{
+		height: 50px;
+		line-height:50px;
+		border-bottom:1px solid #EEE;
+		margin-bottom: 5px;
+	}
+	.gmsl{
+		font-size: 12px;
+		color:#7e7e7e;
+		float: left;
+	}
+	.gmdown{
+		width: 25px;
+		height: 25px;
+		margin: 0 auto;
+		background: #EEEEEE;
+		float: left;
+		text-align:center;
+		line-height:25px;
+		margin-top: 10px;
+		margin-left: 4px;
+		cursor: pointer;
+	}
+	.gmup{
+		width: 25px;
+		height: 25px;
+		margin: 0 auto;
+		background: #EEEEEE;
+		float: left;
+		text-align:center;
+		line-height:25px;
+		margin-top: 10px;
+		margin-left: 10px;
+		cursor: pointer;
+	}
+	.gmxs input{
+		width: 20px;
+		float: left;
+		height: 22px;
+		margin-top: 10px;
+		margin-left: 10px;
+		text-align:center;
+	}
+	/*购买按钮*/
+	.buybtn{
+		margin-top: 15px;
+	}
+	.wxts{
+		color:#7e7e7e;
+		font-size: 12px;
+	}
+	.wxts span{
+		color:#2EA7E0;
+	}
+	.ljgmbtn{
+		margin-top: 15px;
+		background: #eb6118;
+		width: 140px;
+		height: 38px;
+		text-align:center;
+		font-size: 14px;
+		color:#fff;
+		line-height:38px;
+		float: left;
+	}
+	.yfby{
+		font-size: 12px;
+		float: left;
+		font-weight: bold;
+		margin-top: 25px;
+		margin-left: 20px;
+		color:#7e7e7e;
+	}
+	/*详情选项卡部分*/
+	.fixtop1{
+		position:relative;
+	}
+	.fixtop2{
+		position:fixed;
+		top:0px;
+		width:1188px !important;
+		border-bottom: 0;
+		background: #fff;
+		margin: 0 1px;
+		z-index:99;
+		overflow:hidden;
+		margin-top: 0px !important;
+	}
+
+	
+	.buyxxk{
+		margin-left: -13px;
+		width: 1190px;
+		height: 10565px;
+
+	}
+	.cpxq{
+
+	}
+	.options{
+		margin-top: 40px;
+		width: 100%;
+		height: 42px;
+		border-bottom: 1px solid #ddd;
+		padding: 0;
+	}
+	.options span{
+		color:red;
+	}
+	.options div{
+		width: 150px;
+		height: 42px;
+		float: left;
+		line-height: 38px;
+		font-size:14px;
+		text-align: left;
+		cursor:pointer;
+		color:#7e7e7e;
+	}
+	.buyxxk	.card{
+		padding: 0;
+	}
+	.buyxxk	.card div{
+		width: 100%;
+		float: left;
+		line-height: 50px;
+		text-align: center;
+		display:none;
+		position: absolute;
+		top: 45px;
+	}
+	.buyxxk	.card .active{
+		display: block;
+	}
+	.buyxxk	.options .active{
+		border-bottom:2px solid #ed6c00;
+	}
+	/*----规格参数----*/
+	.ggcs{
+		margin-top: -20px;
+		color:#7e7e7e;
+		font-size: 14px;
+	}
+	.ggcs p{
+		height: 20px;
+	}
+	.ggcs hr{margin-top: 20px;}
+	/*----用户评论-----*/
+	.yhpl{
+		color:#666;
+		font-size: 16px;	
+		text-align:center;
+	}
+	/*----售后服务-----*/
+	.shfw{
+		margin-top: -25px;
+		margin: 0 !important;
+		color:#666;
+		font-size: 12px;	
+	}
+	.shfw p{
+		height: 25px;
+		margin-left: 35px;
+
+	}
+
+
+
+	/*--------------------底部service--------------------*/
+	.service{
+		background:white;
+		width: 1190px;
+		height: 135px;
+		border:1px solid #F4F5F9;
+		border-radius:10px;
+		margin-top: 40px;
+		margin-bottom:20px;
+		margin-left: -15px;
+	}
+	.service .col-md-2{
+		margin-left: 35px;
+		margin-top: 15px;
+		padding: 0 30px;
+	}
+	/*--------------------footer部分--------------------*/
+	/*----------返回顶部--------------*/
+
+	.fhdb{
+		position: fixed;
+		bottom: 80px;
+		right: 80px;
+		cursor:pointer;
+	}
+	.hdb{
+		width: 40px;
+		height: 40px;
+		background: #ed6c00;
+		text-align: center;
+		line-height: 40px;
+		display:none;
+	}
+	.hdb span{
+		font-size: 40px;
+		color:#fff;
+	}
+	/*------------联系部分--------*/
+	.footer{
+		width:100%;
+	}
+	.footer2{
+		width:1190px;
+		margin: 0 auto;
+	}
+	.footertop{
+		height: 190px;
+		background: #fff;
+		margin-top: 40px;
+	}
+	.footertl{
+		height: 140px;
+		width: 872px;
+		float: left;
+	}
+	.footertr{
+		height: 140px;
+		width: 300px;
+		float: left;
+	}
+	.y-s{
+		height: 140px;
+		width: 120px;
+		float: left;
+	}
+	.y-s h3{
+		font-size: 14px;
+		color:#7E7E7E;
+		margin-top: 0;
+		font-weight: bold;
+		margin-bottom: 30px;
+	}
+	.y-s p{
+		color:#7E7E7E;
+		font-size: 12px;
+		padding: 5px;
+	}
+	.gyqc{
+		height: 140px;
+		width: 130px;
+		float: left;
+	}
+	.gyqc h3{
+		font-size: 14px;
+		color:rgb(126, 126, 126);
+		margin-top: 0;
+		font-weight: bold;
+		margin-bottom: 30px;
+	}
+	.gyqc p{
+		color:#7E7E7E;
+		font-size: 12px;
+		padding: 5px;
+	}
+	.ewm{
+		height: 140px;
+		width: 140px;
+		float: left;
+		margin-left: 35px;
+	}
+	.ewm2{
+		height: 140px;
+		width: 140px;
+		float: left;
+		margin-left: 30px;
+	}
+	.footertr .zxkf{
+		margin-top:20px;
+		margin-left: 5px;
+	}
+	/*---------版权部分---------*/
+	.footerdown{
+		height:150px;
+		background: #4A4A4A;
+	}
+	.fdtop{
+		float: left;
+		margin-top: 30px;
+		color:white;
+		font-size: 12px;
+		width: 1190px;
+	}
+	.fdtop a{
+		color:white;
+		text-decoration: none;
+	}
+	.fdtl{
+		float: left;
+	}
+	.fdtl span{
+		padding-right: 10px;
+	}
+	.fdtr{
+		float: right;
+	}
+	.fdtr span{
+		padding-left: 5px;
+	}
+	.fddown{
+		float: left;
+		color:white;
+		font-size: 12px;
+		width: 1190px;
+		margin-top:35px;
+	}
+	.fddl{
+		float: left;
+	}
+	.fddl img{
+		width: 100px;
+		height: 34px;
+		padding-right: 10px;
+	}
+	.fddr{
+		float: right;
+		margin-top:17px;
+	}
+	
+
+	/*--------404页面-------*/
+	#errorfrm{
+		width:1190px;
+		height: 550px;
+		margin: 0 auto;
+	}
+	h3,p{
+		text-align:center;
+	}
+	#error img{
+		margin-left: 400px;
+	}
+
+}
+/*-----------------电脑端结束----------------*/
+/*-----------------手机页面-----------------*/
+@media(max-width:960px){
+	*{font-family:'微软雅黑';}
+	/*-----------------导航栏-----------------*/
+	.navbar-brand img{
+	 	width: 100px;height: 35px;
+	 }
+	.header{
+		display:none;
+	}
+	#carousel-example-generic{
+		margin-top: -20px;
+	}
+	/*二级导航隐藏*/
+	.downad{display:none;}
+	/*-------------明星机型-------------*/
+	.zi{
+		margin-top: 20px;
+		margin-bottom: 20px;
+		font-size:16px;
+		font-weight:bold;
+	}
+	/*控制所以表框样式和图片位置*/
+	.sjd{border:1px solid #E3E3E3;
+		border-radius:10px;
+		margin-bottom: 30px;
+		padding: 10px 0;
+	}
+	.sjd img{
+		margin-left:85px;
+		width: 180px;
+		height: 250px;
+	}
+	.c3 img{
+		width: 180px;
+		height: 200px;
+	}
+
+	a{text-decoration: none;color:#7e7e7e;}
+	/*voga*/
+	.sjd .voga-bt{
+		font-size:14px;
+		font-weight:bold;
+		color:#ff5e3a;
+		text-align:center;
+	}
+	.sjd .voga-ms{
+		font-size:12px;
+		text-align:center;
+	}
+	.sjd .voga-jg{
+		font-size:14px;
+		color:#ff5e3a;
+		text-align:center;
+	}
+	/*c3*/
+	.sjd .c3-bt{
+		font-size:14px;
+		font-weight:bold;
+		color:#ff5e3a;
+		text-align:center;
+	}
+	.sjd .c3-ms{
+		font-size:12px;
+		text-align:center;
+	}
+	.sjd .c3-jg{
+		font-size:14px;
+		color:#ff5e3a;
+		text-align:center;
+	}
+	/*n20*/
+	
+	.sjd .n20-bt{
+		font-size:14px;
+		font-weight:bold;
+		color:#ff5e3a;
+		text-align:center;
+	}
+	.sjd .n20-ms{
+		font-size:12px;
+		text-align:center;
+	}
+	.sjd .n20-jg{
+		font-size:14px;
+		color:#ff5e3a;
+		text-align:center;
+	}
+	.sjd .n20 img{
+		margin-left:100px;
+	}
+	/*--全部机型--*/
+	.qbjx-sj{
+		height: 30px;
+		width: 105px;
+		background: #eb6118;
+		color:white;
+		text-align:center;
+		line-height: 30px;
+		margin-left: 140px;
+		border-radius:5px;
+		margin-top: 360px;
+
+	}
+	.qbjx-pc{display:none;}
+
+	/*-------------热门配件-------------*/
+	.zi2{
+		margin-top: 20px;
+		margin-bottom: 20px;
+		font-size:16px;
+		font-weight:bold;
+	}
+	.sjd .pjbt{
+		font-size:14px;
+		font-weight:bold;
+		color:#ff5e3a;
+		text-align:center;
+	}
+	.sjd .pjms{
+		font-size:12px;
+		text-align:center;
+		
+	}
+	.sjd .pjjg{
+		font-size:14px;
+		color:#ff5e3a;
+		text-align:center;
+	}
+	.rmpj .sjd img{
+		width: 230px;
+		height: 260px;
+	}
+	/*--查看全部配件--*/
+	.qbpj{display:none;}
+	.qbpjsj{
+		height: 30px;
+		width: 105px;
+		background: #eb6118;
+		text-align:center;
+		line-height: 30px;
+		margin-left: 140px;
+		border-radius:5px;
+	}
+	.qbpjsj a{color:white;}
+	/*-------------列表页面-------------*/
+	.listhr{
+		margin-top: -10px;
+	}
+	.listbody{
+		margin-top: -20px;
+	}
+
+	.listone{
+		width: 330px;
+		height: 300px;
+		border:1px solid #DDD;
+		border-radius:10px;
+		margin-top: 20px;
+		margin-left: 27px;
+	}
+	.listsp{
+		width: 180px;
+		height: 180px;
+		margin-left: 60px;
+		margin-top: 15px;
+	}
+	.xinpin{
+		margin-bottom: 120px;
+		margin-right: -20px;
+	}
+	.listbt{
+		font-size: 16px;
+		margin-top: 10px;
+		text-align:center;
+		color:#ff5e3a;
+	}
+	.listms{
+		font-size: 12px;
+		margin-top: 5px;
+		text-align:center;
+		color:grey;
+	}
+	.listjg{
+		font-size: 20px;
+		margin-top: 10px;
+		text-align:center;
+		color:#ff5e3a;
+	}
+	/*-------------商品详情页面-------------*/
+	.buycontainer{color:#666;}
+	.buycontainer a{color:#666;}
+	.share,.yhpl,.shfw,.ygl img,.imgs .wu,.xt,.dt,.yfby,.wxts{display:none;}
+	.options div{
+		display:none;
+	}
+	.options .active{
+		display:block;
+		margin-bottom: 10px;
+		text-align:center;
+		color:#ff5e3a;
+	}
+	.buytop{
+		width: 354px;
+		height: 260px;
+		margin: 0 auto;
+	}
+	.buybt{
+		text-align:center;
+		color:#ff5e3a;
+	}
+	.buyms,.buyms2{
+		text-align:center;
+		font-size: 12px;
+	}
+	.buyjg{
+		text-align:center;
+		color:#ff5e3a;
+		font-weight: bold;
+	}
+	.buyxl,a .buypj{
+		float: left;
+		padding-left: 70px;
+	}
+	.buyxl span,.buypj span{
+		color:#ff5e3a;
+	}
+	.buyxq{
+		margin-top: 10px;
+	}
+	.yanse {
+		margin-top: 30px;
+		margin-left: 35px;
+		font-weight: bold;
+		color:#ff5e3a;
+	}
+	.lanse .ygl{
+		border: 1px solid #ff5e3a;
+		border-radius:5px;
+		width: 100px;
+		height: 35px;
+		margin: 0 auto;
+		text-align:center;
+		line-height:35px;
+		margin-bottom: 5px;
+	}
+	
+	.xznc{
+		float: left;
+		margin-bottom: 50px;
+
+	}
+	.neicun{
+		padding-left:45px;
+		font-weight: bold;
+		color:#ff5e3a;
+	}
+	.btnnc{
+		border:1px solid #ff5e3a;
+		padding-left:13px;
+		width: 60px;
+		height: 25px;
+		margin-left: 45px;
+		margin-top: 5px;
+		border-radius:5px;
+	}
+	.gmsl{
+		font-weight: bold;
+		color:#ff5e3a;
+		float: left;
+		padding-left: 50px;
+		margin-top: -30px;
+	}
+	.gmdown{
+		float: left;
+		margin-left: 130px;
+		background: #ccc;
+		width: 20px;
+		text-align:center;
+		height: 20px;
+		color:#ff5e3a;
+	}
+	.gmxs input{
+		float: left;
+		margin-left: 20px;
+		width: 26px;
+		height: 20px;
+		text-align:center;
+
+	}
+	.gmup{
+		float: left;
+		margin-left: 20px;
+		background: #ccc;
+		text-align:center;
+		width: 20px;
+		height: 20px;
+		color:#ff5e3a;
+	}
+	.buybtn{
+		width: 300px;
+		height: 60px;
+		margin-bottom: 10px;
+		float: left;
+	}
+
+	.ljgmbtn{
+		border:1px solid #ccc;
+		width: 80px;
+		height: 30px;
+		margin-left:140px;
+		margin-top: 10px;
+		text-align:center;
+		line-height:26px;
+		cursor: pointer;
+	}
+	
+
+
+
+
+
+
+	/*-------------底部保障及footer结束-------------*/
+	.service{
+		margin-top: 50px;
+		margin-left: 20px;
+	}
+	.ewm{
+		float: left;
+		margin:30px;
+		margin-left: 55px;
+		
+
+	}
+	.ewm2{
+		float: left;
+		margin-top: 30px;
+		
+	}
+	.footertr{
+		margin-left: 60px;
+	}
+	.zxkf{
+		margin-left: 7px;
+	}
+	.shqc{
+		padding: 10px;
+	}
+	.fdtl,.fddr{
+		font-weight:bold;
+		text-align:center;
+		margin-top: 10px;
+		color:grey;
+	}
+	/*手机端隐藏电脑端样式*/
+	.y-s,.gyqc,.fdtr,.fddl,.copy,.fhdb{display:none;}
+
+}

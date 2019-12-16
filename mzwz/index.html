@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>魅族首页</title>
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="./index.css">
+	<link rel="icon" href="../as.jpg">
+	<link rel="stylesheet" type="text/css" href="./fonts/iconfont.css">
+	<script src="../js/jquery-1.11.3.min.js"></script>
+</head>
+<body style="background:#f4f4f4;">
+	<div style="width: 100px; height: 30px; background-color: red; position: fixed;right: 0px;top:50%;text-align: center;line-height: 30px;font-size: 21px; border-radius: 8px;z-index: 999;"><a href="https://dutianlong.github.io/duwei1/index.html" style="text-decoration: none;"><span style="color: yellow;">返回首页</span></a></div>
+	<!-- *************************************** 顶部导航 ******************************************-->
+		<div class="container-fluid" style="background:#484848;color:#c4c4c4;line-height:36px;">
+				<div class="row">
+					<div class="col-md-5 hidden-xs">
+						<ul class="top-left list-unstyled" style="margin-left:28px">
+							<li class="pull-left"><a href="">商城</a></li>
+							<li class="pull-left"><a href="">魅族</a></li>
+							<li class="pull-left"><a href="">魅蓝</a></li>
+							<li class="pull-left"><a href="">Flyme</a></li>
+							<li class="pull-left"><a href="">云服务</a></li>
+							<li class="pull-left"><a href="">专卖店</a></li>
+							<li class="pull-left"><a href="">服务支持</a></li>
+							<li class="pull-left"><a href="">社区</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3 col-md-offset-4">
+						<ul class="top-right list-unstyled" style="margin-left:55px;">
+							<li class="pull-left"><a href="">Select Region</a></li>
+							<li class="pull-left"><a href=""><img src="./img/phone.jpg" alt="" style="margin-right:5px;">APP下载</a></li>						
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!-- *************************************** 导航中部 ******************************************-->
+		<div class="container-fluid" style="background:white;height:82px;">
+			<div class="row">
+				<div class="col-md-2" style="margin-top:28px;"><img src="./img/logo.png" class="center-block" style="padding-left:25px"></div>
+				<div class="col-md-8 col-md-offset-2" style="margin-top:31px;position: relative;" id="zdh">
+					<ul class="list-unstyled nav_mid">
+						<li class="pull-left">魅族手机</li>
+						<li class="pull-left li1">魅蓝手机</li>
+						<li class="pull-left li1">魅族声学</li>
+						<li class="pull-left li1">智能配件</li>
+						<li class="pull-left li1">生活周边</li>
+					</ul>
+					<div class="sousuokuang">
+						<input type="text" placeholder="魅族15" name="sou">
+						<a href=""><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
+					</div>
+					<div class="dlzc">
+						<div class="dlzc1">
+						<img src="./img/ren.jpg" style="width:29px;height:29px;margin-left:15px;margin-top:-13px;position:relative;">
+						</div>
+						<div class="dizc2">
+						<a href="./shop/index.html" style="text-decoration:none"><i class="iconfont icon-caigou-xianxing" style="font-size:30px;margin-left:25px;padding-top:5px;position:relative;"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!-- *************************************** 轮播图 ********************************************-->
+		<div style="width: 100%;height: 530px;">
+		<div class="container" style="position:relative;width:1300px;margin-left:13px;">
+
+			<div class="row center-block col-xs-12" style="margin-left:23px;padding:0">
+				<!-- <div> -->
+					<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				  	<!-- ******************* 图中间的圆点 **************** -->
+					  <ol class="carousel-indicators">
+					    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+					    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+					    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+					  </ol>
+
+					  <!-- **************** 轮流播放的五张图片 *********** -->
+					 <div class="carousel-inner" role="listbox" style="width:97.6%">
+					    <div class="item active">
+						   <img src="./img/1.jpg" alt="">
+						   <div class="carousel-caption"></div>
+						</div>
+
+					    <div class="item">
+					      <img src="./img/2.jpg" alt="">	
+					      <div class="carousel-caption"></div>
+					    </div>
+
+					    <div class="item">
+					      <img src="./img/3.jpg" alt="">
+					      <div class="carousel-caption"></div>
+					    </div>
+
+					    <div class="item">
+					      <img src="./img/4.jpg" alt="">
+					      <div class="carousel-caption"></div>
+					    </div>
+
+					    <div class="item">
+					      <img src="./img/5.jpg" alt="">
+					      <div class="carousel-caption"></div>
+					    </div>
+					 </div>
+
+					</div>
+				<!-- </div> -->
+			</div>
+			<!-- ******************* 侧边栏 ****************** -->
+			<div class="row" style="position:absolute;top:-30px;left:0">
+				<div class="col-md-4 cbl">
+					<ul class="list-unstyled">
+						<li><a href="./list.html" class="a1">手机</a></li>
+						<li><a href="" class="a1">智能设备</a></li>
+						<li><a href="" class="a1">智能穿戴</a></li>
+						<li><a href="" class="a1">游戏设备</a></li>
+						<li><a href="" class="a1">数码影音</a></li>
+						<li><a href="" class="a1">手机配件 / 移动电源</a></li>
+						<li><a href="" class="a1">移动存储 / 办公设备</a></li>
+						<li><a href="" class="a1">生活周边</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 个人中心隐藏部分··············································· -->
+	<div class="topdiss">
+		<ul class="list-unstyled">
+			<li style="margin-top:15px;"><a href="./login.html" style="text-decoration:none">立即登录</a></li>
+			<li><a href="" style="text-decoration:none">立即注册</a></li>
+			<li><a href="" style="text-decoration:none">我的订单</a></li>
+			<li><a href="" style="text-decoration:none">M码通道</a></li>
+		</ul>
+	</div>
+	<!-- 主导航隐藏部分 -->
+	<div class="dhyc">
+		<ul>
+			<li>
+				<img src="./img/Cgbj0FrxPbKAURMmAAJgeOiuUGU292.png" style="width: 80px;height: 80px;margin-top: 10px;margin-left: 30px;" >
+				<a href="" style="text-align: center;margin-left: 40px;">魅蓝 6T</a>
+				<P style="margin-left: 45px;color: #898989">￥799</P>
+			</li>
+			<li>
+				<img src="./img/Cgbj0FrxPbKAURMmAAJgeOiuUGU292.png" style="width: 80px;height: 80px;margin-top: 10px;margin-left: 30px;" >
+				<a href="" style="text-align: center;margin-left: 40px;">魅蓝 6T</a>
+				<P style="margin-left: 45px;color: #898989">￥799</P>
+			</li>
+			<li>	
+				<img src="./img/Cgbj0FrxPbKAURMmAAJgeOiuUGU292.png" style="width: 80px;height: 80px;margin-top: 10px;margin-left: 30px;" >
+				<a href="" style="text-align: center;margin-left: 40px;">魅蓝 6T</a>
+				<P style="margin-left: 45px;color: #898989">￥799</P>
+			</li>
+			<li>
+				<img src="./img/Cgbj0FrxPbKAURMmAAJgeOiuUGU292.png" style="width: 80px;height: 80px;margin-top: 10px;margin-left: 30px;" >
+				<a href="" style="text-align: center;margin-left: 40px;">魅蓝 6T</a>
+				<P style="margin-left: 45px;color: #898989">￥799</P>
+			</li>
+			<li>
+				<img src="./img/Cgbj0FrxPbKAURMmAAJgeOiuUGU292.png" style="width: 80px;height: 80px;margin-top: 10px;margin-left: 30px;" >
+				<a href="" style="text-align: center;margin-left: 40px;">魅蓝 6T</a>
+				<P style="margin-left: 45px;color: #898989">￥799</P>
+			</li>
+			<li>
+				<img src="./img/Cgbj0FrxPbKAURMmAAJgeOiuUGU292.png" style="width: 80px;height: 80px;margin-top: 10px;margin-left: 30px;" >
+				<a href="" style="text-align: center;margin-left: 40px;">魅蓝 6T</a>
+				<P style="margin-left: 45px;color: #898989">￥799</P>
+			</li>
+			<li>
+				<img src="./img/Cgbj0FrxPbKAURMmAAJgeOiuUGU292.png" style="width: 80px;height: 80px;margin-top: 10px;margin-left: 30px;" >
+				<a href="" style="text-align: center;margin-left: 40px;">魅蓝 6T</a>
+				<P style="margin-left: 45px;color: #898989">￥799</P>
+			</li>
+			<!-- <li>
+				<img src="./img/Cgbj0FrxPbKAURMmAAJgeOiuUGU292.png" style="width: 80px;height: 80px;margin-top: 10px;margin-left: 30px;" >
+				<a href="" style="text-align: center;margin-left: 40px;">魅蓝 6T</a>
+				<P style="margin-left: 45px;color: #898989">￥799</P>
+			</li> -->
+		</ul>
+	</div>
+	<!-- 侧边导航隐藏部分*****************************0 -->
+	<!-- <div class="cbyc">
+		<div style="height: 20%">
+			<div style="position: absolute;left: 0px;
+			top: 35px;">
+			<h3 style="font-size: 20px;color: black;"><a href="">智能设备</a></h3>
+			</div>
+		 </div>
+		
+		<ul>
+			<li>
+				<img src="./img/Cgbj0VnttbKAPTIdAAGCK4nlrc0213_180x180.png" style="width: 40px;height: 40px;margin-top: 5px;margin-left: 15px;">
+				<a style=" margin-top:15px;font-size: 13px;color: black;">魅族智能体脂秤</a>
+			</li>
+			<li>
+				<img src="./img/Cgbj0VnttbKAPTIdAAGCK4nlrc0213_180x180.png" style="width: 40px;height: 40px;margin-top: 5px;margin-left: 15px;">
+				<a style=" margin-top:15px;font-size: 13px;color: black;">魅族智能体脂秤</a>
+			</li>
+			<li>
+				<img src="./img/Cgbj0VnttbKAPTIdAAGCK4nlrc0213_180x180.png" style="width: 40px;height: 40px;margin-top: 5px;margin-left: 15px;">
+				<a style=" margin-top:15px;font-size: 13px;color: black;">魅族智能体脂秤</a>
+			</li>
+			<li>
+				<img src="./img/Cgbj0VnttbKAPTIdAAGCK4nlrc0213_180x180.png" style="width: 40px;height: 40px;margin-top: 5px;margin-left: 15px;">
+				<a style=" margin-top:15px;font-size: 13px;color: black;">魅族智能体脂秤</a>
+			</li>
+			<li>
+				<img src="./img/Cgbj0VnttbKAPTIdAAGCK4nlrc0213_180x180.png" style="width: 40px;height: 40px;margin-top: 5px;margin-left: 15px;">
+				<a style=" margin-top:15px;font-size: 13px;color: black;">魅族智能体脂秤</a>
+			</li>
+			<li>
+				<img src="./img/Cgbj0VnttbKAPTIdAAGCK4nlrc0213_180x180.png" style="width: 40px;height: 40px;margin-top: 5px;margin-left: 15px;">
+				<a style=" margin-top:15px;font-size: 13px;color: black;">魅族智能体脂秤</a>
+			</li>
+			<li>
+				<img src="./img/Cgbj0VnttbKAPTIdAAGCK4nlrc0213_180x180.png" style="width: 40px;height: 40px;margin-top: 5px;margin-left: 15px;">
+				<a style=" margin-top:15px;font-size: 13px;color: black;">魅族智能体脂秤</a>
+			</li>
+			<li>
+				<img src="./img/Cgbj0VnttbKAPTIdAAGCK4nlrc0213_180x180.png" style="width: 40px;height: 40px;margin-top: 5px;margin-left: 15px;">
+				<a style=" margin-top:15px;font-size: 13px;color: black;">魅族智能体脂秤</a>
+			</li>
+			<li>
+				<img src="./img/Cgbj0VnttbKAPTIdAAGCK4nlrc0213_180x180.png" style="width: 40px;height: 40px;margin-top: 5px;margin-left: 15px;">
+				<a style=" margin-top:15px;font-size: 13px;color: black;">魅族智能体脂秤</a>
+			</li>
+			<li>
+				<img src="./img/Cgbj0VnttbKAPTIdAAGCK4nlrc0213_180x180.png" style="width: 40px;height: 40px;margin-top: 5px;margin-left: 15px;">
+				<a style=" margin-top:15px;font-size: 13px;color: black;">魅族智能体脂秤</a>
+			</li>
+
+		</ul>
+	</div> -->
+
+	<!-- *************************************** 四张图 ****************************************** -->
+	<div style="width: 100%;height: 3750px;">
+	<div class="container-fluid">
+		<div class="row col-md-11 tu_img" style="margin-top:10px;margin-left:35px;">
+			<div class="tu1">
+				<div class="col-md-3 col-sm-3"><img src="./img/tu1.jpg" style="margin-left:-28px"></div>
+				<div class="col-md-3 col-sm-3"><img src="./img/tu2.jpg" style="margin-left:-28px"></div>
+				<div class="col-md-3 col-sm-3"><img src="./img/tu3.jpg" style="margin-left:-26px"></div>
+				<div class="col-md-3 col-sm-3"><img src="./img/tu4.jpg" style="margin-left:-25px"></div>
+			</div>
+		</div>
+	</div>
+	<!-- *******************************************热卖商品******************************************* -->
+	<div class="container-fluid">
+		<div class="row col-md-11 tu_img" style="margin-top:40px;margin-left:6px;">
+			<div class="tu1">
+				<div class="col-md-3 col-sm-3">
+					<div class="h2">热卖商品</div>
+				    <div class="thumbnail" style="width:304px;">
+				      <a href="./xqy.html"><img src="./img/remai1.png" style="width:115px;height:230px;margin-top:30px"></a>
+				      <div class="caption">
+				        <h4 class="text-center" style="margin-top:20px;color:#666">魅族 PRO 7</h4>
+				        <p class="text-center" style="color:#999">领券最高立减500元</p>
+				        <p class="text-center h3"><span style="font-size:16px;">￥</span>1999<span style="font-size:17px">起</span></p>
+				      </div>
+					    </div>
+				</div>
+				<div class="col-md-3 col-sm-3">
+				    <div class="thumbnail" style="width:304px;margin-top:64px">
+				      <img src="./img/remai1.png" style="width:115px;height:230px;margin-top:30px">
+				      <div class="caption ">
+				        <h4 class="text-center" style="margin-top:20px;color:#666">魅族 PRO 7</h4>
+				        <p class="text-center" style="color:#999">领券最高立减500元</p>
+				        <p class="text-center h3"><span style="font-size:16px;">￥</span>1999<span style="font-size:17px">起</span></p>
+				      </div>
+				    </div>
+				</div>
+				<div class="col-md-3 col-sm-3">
+				    <div class="thumbnail" style="width:304px;margin-top:64px">
+				      <img src="./img/remai1.png" style="width:115px;height:230px;margin-top:30px">
+				      <div class="caption ">
+				        <h4 class="text-center" style="margin-top:20px;color:#666">魅族 PRO 7</h4>
+				        <p class="text-center" style="color:#999">领券最高立减500元</p>
+				        <p class="text-center h3"><span style="font-size:16px;">￥</span>1999<span style="font-size:17px">起</span></p>
+				      </div>
+				    </div>
+				</div>
+				<div class="col-md-3 col-sm-3">
+				    <div class="thumbnail" style="width:304px;margin-top:64px">
+				      <img src="./img/remai1.png" style="width:115px;height:230px;margin-top:30px">
+				      <div class="caption ">
+				        <h4 class="text-center" style="margin-top:20px;color:#666">魅族 PRO 7</h4>
+				        <p class="text-center" style="color:#999">领券最高立减500元</p>
+				        <p class="text-center h3"><span style="font-size:16px;">￥</span>1999<span style="font-size:17px">起</span></p>
+				      </div>
+				    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- ******************************************* 手机 ******************************************* -->
+	<div class="container-fluid">
+		<div class="row col-md-11 tu_img" style="margin-top:20px;margin-left:6px;">
+			<div class="tu1">
+				<div class="col-md-5 col-sm-5">
+					<div class="h2">手机</div>
+				    <div class="rounded" style="">
+				      <img src="./img/shouji1.jpg" style="width:615px;height:450px;">
+					</div>
+				</div>
+				<div class="col-md-5 col-sm-5" style="margin-top:63px;margin-left:106px;">
+				    <div class="rounded" style="">
+				      <img src="./img/shouji2.jpg" style="width:615px;height:220px;">
+					</div>
+					<div class="rounded" style="margin-top:10px">
+				      <img src="./img/shouji3.jpg" style="width:303px;height:220px;">
+					</div>
+					<div class="rounded" style="margin-top:-220px;margin-left:313px">
+				      <img src="./img/shouji4.jpg" style="width:303px;height:220px;">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 手机 第二排 -->
+	<div class="container-fluid">
+		<div class="row col-md-11 tu_img" style="margin-top:10px;margin-left:6px;">
+			<div class="tu1">
+				<div class="col-md-3 col-sm-3">
+				    <div class="thumbnail" style="width:304px;">
+				      <img src="./img/remai1.png" style="width:115px;height:230px;margin-top:30px">
+				      <div class="caption ">
+				        <h4 class="text-center" style="margin-top:20px;color:#666">魅族 PRO 7</h4>
+				        <p class="text-center" style="color:#999">领券最高立减500元</p>
+				        <p class="text-center h3"><span style="font-size:16px;">￥</span>1999<span style="font-size:17px">起</span></p>
+				      </div>
+					    </div>
+				</div>
+				<div class="col-md-3 col-sm-3">
+				    <div class="thumbnail" style="width:304px;">
+				      <img src="./img/remai1.png" style="width:115px;height:230px;margin-top:30px">
+				      <div class="caption ">
+				        <h4 class="text-center" style="margin-top:20px;color:#666">魅族 PRO 7</h4>
+				        <p class="text-center" style="color:#999">领券最高立减500元</p>
+				        <p class="text-center h3"><span style="font-size:16px;">￥</span>1999<span style="font-size:17px">起</span></p>
+				      </div>
+				    </div>
+				</div>
+				<div class="col-md-3 col-sm-3">
+				    <div class="thumbnail" style="width:304px;">
+				      <img src="./img/remai1.png" style="width:115px;height:230px;margin-top:30px">
+				      <div class="caption ">
+				        <h4 class="text-center" style="margin-top:20px;color:#666">魅族 PRO 7</h4>
+				        <p class="text-center" style="color:#999">领券最高立减500元</p>
+				        <p class="text-center h3"><span style="font-size:16px;">￥</span>1999<span style="font-size:17px">起</span></p>
+				      </div>
+				    </div>
+				</div>
+				<div class="col-md-3 col-sm-3">
+				    <div class="thumbnail" style="width:304px;">
+				      <img src="./img/remai1.png" style="width:115px;height:230px;margin-top:30px">
+				      <div class="caption ">
+				        <h4 class="text-center" style="margin-top:20px;color:#666">魅族 PRO 7</h4>
+				        <p class="text-center" style="color:#999">领券最高立减500元</p>
+				        <p class="text-center h3"><span style="font-size:16px;">￥</span>1999<span style="font-size:17px">起</span></p>
+				      </div>
+				    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 手机 第三排 -->
+	<div class="container-fluid">
+		<div class="row col-md-11 tu_img" style="margin-top:-10px; margin-left:6px;">
+			<div class="tu1">
+				<div class="col-md-3 col-sm-3">
+				    <div class="thumbnail" style="width:304px;">
+				      <img src="./img/remai1.png" style="width:115px;height:230px;margin-top:30px">
+				      <div class="caption ">
+				        <h4 class="text-center" style="margin-top:20px;color:#666">魅族 PRO 7</h4>
+				        <p class="text-center" style="color:#999">领券最高立减500元</p>
+				        <p class="text-center h3"><span style="font-size:16px;">￥</span>1999<span style="font-size:17px">起</span></p>
+				      </div>
+					    </div>
+				</div>
+				<div class="col-md-3 col-sm-3">
+				    <div class="thumbnail" style="width:304px;">
+				      <img src="./img/remai1.png" style="width:115px;height:230px;margin-top:30px">
+				      <div class="caption ">
+				        <h4 class="text-center" style="margin-top:20px;color:#666">魅族 PRO 7</h4>
+				        <p class="text-center" style="color:#999">领券最高立减500元</p>
+				        <p class="text-center h3"><span style="font-size:16px;">￥</span>1999<span style="font-size:17px">起</span></p>
+				      </div>
+				    </div>
+				</div>
+				<div class="col-md-3 col-sm-3">
+				    <div class="thumbnail" style="width:304px;">
+				      <img src="./img/remai1.png" style="width:115px;height:230px;margin-top:30px">
+				      <div class="caption ">
+				        <h4 class="text-center" style="margin-top:20px;color:#666">魅族 PRO 7</h4>
+				        <p class="text-center" style="color:#999">领券最高立减500元</p>
+				        <p class="text-center h3"><span style="font-size:16px;">￥</span>1999<span style="font-size:17px">起</span></p>
+				      </div>
+				    </div>
+				</div>
+				<div class="col-md-3 col-sm-3">
+				    <div class="thumbnail" style="width:304px;">
+				      <img src="./img/remai1.png" style="width:115px;height:230px;margin-top:30px">
+				      <div class="caption ">
+				        <h4 class="text-center" style="margin-top:20px;color:#666">魅族 PRO 7</h4>
+				        <p class="text-center" style="color:#999">领券最高立减500元</p>
+				        <p class="text-center h3"><span style="font-size:16px;">￥</span>1999<span style="font-size:17px">起</span></p>
+				      </div>
+				    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- ******************************************* 智能配件 ******************************************* -->
+	<!-- 第一排 -->
+	<div class="container-fluid">
+		<div class="row col-md-11 tu_img" style="margin-top:20px;margin-left:6px;">
+			<div class="tu1">
+				<div class="col-md-5 col-sm-5">
+					<div class="h2">智能配件</div>
+				    <div class="rounded" style="">
+				      <img src="./img/zhineng1.jpg" style="width:615px;height:450px;">
+					</div>
+				</div>
+				<div class="col-md-5 col-sm-5" style="margin-top:63px;margin-left:106px;">
+				    <div class="rounded" style="">
+				      <img src="./img/zhineng2.jpg" style="width:615px;height:220px;">
+					</div>
+					<div class="rounded" style="margin-top:10px">
+				      <img src="./img/zhineng3.jpg" style="width:303px;height:220px;">
+					</div>
+					<div class="rounded" style="margin-top:-220px;margin-left:313px">
+				      <img src="./img/zhineng4.jpg" style="width:303px;height:220px;">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 第二排 -->
+	<div class="container-fluid">
+		<div class="row col-md-11 tu_img" style="margin-top:10px;margin-left:6px;">
+			<div class="tu1">
+				<div class="col-md-3 col-sm-3">
+				    <div class="thumbnail" style="width:304px;">
+				      <img src="./img/remai1.png" style="width:115px;height:230px;margin-top:30px">
+				      <div class="caption ">
+				        <h4 class="text-center" style="margin-top:20px;color:#666">魅族 PRO 7</h4>
+				        <p class="text-center" style="color:#999">领券最高立减500元</p>
+				        <p class="text-center h3"><span style="font-size:16px;">￥</span>1999<span style="font-size:17px">起</span></p>
+				      </div>
+					    </div>
+				</div>
+				<div class="col-md-3 col-sm-3">
+				    <div class="thumbnail" style="width:304px;">
+				      <img src="./img/remai1.png" style="width:115px;height:230px;margin-top:30px">
+				      <div class="caption ">
+				        <h4 class="text-center" style="margin-top:20px;color:#666">魅族 PRO 7</h4>
+				        <p class="text-center" style="color:#999">领券最高立减500元</p>
+				        <p class="text-center h3"><span style="font-size:16px;">￥</span>1999<span style="font-size:17px">起</span></p>
+				      </div>
+				    </div>
+				</div>
+				<div class="col-md-3 col-sm-3">
+				    <div class="thumbnail" style="width:304px;">
+				      <img src="./img/remai1.png" style="width:115px;height:230px;margin-top:30px">
+				      <div class="caption ">
+				        <h4 class="text-center" style="margin-top:20px;color:#666">魅族 PRO 7</h4>
+				        <p class="text-center" style="color:#999">领券最高立减500元</p>
+				        <p class="text-center h3"><span style="font-size:16px;">￥</span>1999<span style="font-size:17px">起</span></p>
+				      </div>
+				    </div>
+				</div>
+				<div class="col-md-3 col-sm-3">
+				    <div class="thumbnail" style="width:304px;">
+				      <img src="./img/remai1.png" style="width:115px;height:230px;margin-top:30px">
+				      <div class="caption ">
+				        <h4 class="text-center" style="margin-top:20px;color:#666">魅族 PRO 7</h4>
+				        <p class="text-center" style="color:#999">领券最高立减500元</p>
+				        <p class="text-center h3"><span style="font-size:16px;">￥</span>1999<span style="font-size:17px">起</span></p>
+				      </div>
+				    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 第三排 -->
+	<div class="container-fluid">
+		<div class="row col-md-11 tu_img" style="margin-top:-10px;margin-left:6px;">
+			<div class="tu1">
+				<div class="col-md-3 col-sm-3">
+				    <div class="thumbnail" style="width:304px;">
+				      <img src="./img/remai1.png" style="width:115px;height:230px;margin-top:30px">
+				      <div class="caption ">
+				        <h4 class="text-center" style="margin-top:20px;color:#666">魅族 PRO 7</h4>
+				        <p class="text-center" style="color:#999">领券最高立减500元</p>
+				        <p class="text-center h3"><span style="font-size:16px;">￥</span>1999<span style="font-size:17px">起</span></p>
+				      </div>
+					    </div>
+				</div>
+				<div class="col-md-3 col-sm-3">
+				    <div class="thumbnail" style="width:304px;">
+				      <img src="./img/remai1.png" style="width:115px;height:230px;margin-top:30px">
+				      <div class="caption ">
+				        <h4 class="text-center" style="margin-top:20px;color:#666">魅族 PRO 7</h4>
+				        <p class="text-center" style="color:#999">领券最高立减500元</p>
+				        <p class="text-center h3"><span style="font-size:16px;">￥</span>1999<span style="font-size:17px">起</span></p>
+				      </div>
+				    </div>
+				</div>
+				<div class="col-md-3 col-sm-3">
+				    <div class="thumbnail" style="width:304px;">
+				      <img src="./img/remai1.png" style="width:115px;height:230px;margin-top:30px">
+				      <div class="caption ">
+				        <h4 class="text-center" style="margin-top:20px;color:#666">魅族 PRO 7</h4>
+				        <p class="text-center" style="color:#999">领券最高立减500元</p>
+				        <p class="text-center h3"><span style="font-size:16px;">￥</span>1999<span style="font-size:17px">起</span></p>
+				      </div>
+				    </div>
+				</div>
+				<div class="col-md-3 col-sm-3">
+				    <div class="thumbnail" style="width:304px;">
+				      <img src="./img/remai1.png" style="width:115px;height:230px;margin-top:30px">
+				      <div class="caption ">
+				        <h4 class="text-center" style="margin-top:20px;color:#666">魅族 PRO 7</h4>
+				        <p class="text-center" style="color:#999">领券最高立减500元</p>
+				        <p class="text-center h3"><span style="font-size:16px;">￥</span>1999<span style="font-size:17px">起</span></p>
+				      </div>
+				    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 第四排 -->
+	<div class="container-fluid">
+		<div class="row col-md-11 tu_img" style="margin-top:-10px;margin-left:6px;">
+			<div class="tu1">
+				<div class="col-md-3 col-sm-3">
+				    <div class="thumbnail" style="width:304px;">
+				      <img src="./img/remai1.png" style="width:115px;height:230px;margin-top:30px">
+				      <div class="caption ">
+				        <h4 class="text-center" style="margin-top:20px;color:#666">魅族 PRO 7</h4>
+				        <p class="text-center" style="color:#999">领券最高立减500元</p>
+				        <p class="text-center h3"><span style="font-size:16px;">￥</span>1999<span style="font-size:17px">起</span></p>
+				      </div>
+					    </div>
+				</div>
+				<div class="col-md-3 col-sm-3">
+				    <div class="thumbnail" style="width:304px;">
+				      <img src="./img/remai1.png" style="width:115px;height:230px;margin-top:30px">
+				      <div class="caption ">
+				        <h4 class="text-center" style="margin-top:20px;color:#666">魅族 PRO 7</h4>
+				        <p class="text-center" style="color:#999">领券最高立减500元</p>
+				        <p class="text-center h3"><span style="font-size:16px;">￥</span>1999<span style="font-size:17px">起</span></p>
+				      </div>
+				    </div>
+				</div>
+				<div class="col-md-3 col-sm-3">
+				    <div class="thumbnail" style="width:304px;">
+				      <img src="./img/remai1.png" style="width:115px;height:230px;margin-top:30px">
+				      <div class="caption ">
+				        <h4 class="text-center" style="margin-top:20px;color:#666">魅族 PRO 7</h4>
+				        <p class="text-center" style="color:#999">领券最高立减500元</p>
+				        <p class="text-center h3"><span style="font-size:16px;">￥</span>1999<span style="font-size:17px">起</span></p>
+				      </div>
+				    </div>
+				</div>
+				<div class="col-md-3 col-sm-3">
+				    <div class="thumbnail" style="width:304px;">
+				      <img src="./img/remai1.png" style="width:115px;height:230px;margin-top:30px">
+				      <div class="caption ">
+				        <h4 class="text-center" style="margin-top:20px;color:#666">魅族 PRO 7</h4>
+				        <p class="text-center" style="color:#999">领券最高立减500元</p>
+				        <p class="text-center h3"><span style="font-size:16px;">￥</span>1999<span style="font-size:17px">起</span></p>
+				      </div>
+				    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- ******************************************* 底部 ******************************************* -->
+	<div class="container-fluid">
+		<div class="row pull-left" style="width:1349px;margin-top:40px; background:white">
+		<!-- 底部上半部分 -->
+			<div class="bott" style="width:1240px;height:116px;margin-left:60px;margin-top:50px">
+				<!-- 底部上半部分左边 -->
+				<div class="zuo" style="width: 980px;height: 116px;float:left">
+					<ul class="list-unstyled ul1">
+						<li><img src="./img/bt-1.png" alt="">全场顺丰包邮</li>
+						<li><img src="./img/bt-2.png" alt="">百城速达</li>
+						<li><img src="./img/bt-3.png" alt="">7天无理由退货</li>
+						<li><img src="./img/bt-4.png" alt="">15天换货保障</li>
+					</ul>
+					<ul class="list-unstyled ul2">
+						<li><img src="./img/bt-5.png" alt="">1年免费保修</li>
+						<li><img src="./img/bt-6.png" alt="">线下体验店</li>
+						<li><img src="./img/bt-7.png" alt="">远程支持服务</li>
+						<li><img src="./img/bt-8.png" alt="">上门快修</li>
+					</ul>
+				</div>
+				<!-- 底部上半部分右边 -->			
+				<div class="you" style="width: 201px;height: 108px;float: right;margin-right:30px;text-align:right;">
+					<span style="font-size:12px;padding-top:5px">周一至周日 7:30-24:00</span>
+					<p style="font-size:30px;color:#00C3F5">400-788-3333</p>
+					<a href=""><img src="./img/bt-9.png" alt="" style="width:20px;height:18px;">&nbsp;&nbsp;在线客服</a>
+				</div>			
+			</div>
+			<!-- 分割线 -->
+			<hr>  
+		<!-- 底部下半部分 -->
+			<div class="bott-xia">
+			<!-- 底部下半部分左边 -->
+				<div class="zuo" style="width:1003px;height:53px;float:left;">
+				<!-- 底部下半部分左边上边 -->
+					<ul class="list-unstyled">
+						<li><a href="">了解魅族</a></li>
+						<li style="color:#999;">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</li>
+						<li><a href="">加入我们</a></li>
+						<li style="color:#999;">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</li>
+						<li><a href="">联系我们</a></li>
+						<li style="color:#999;">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</li>
+						<li><a href="">Flyme</a></li>
+						<li style="color:#999;">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</li>
+						<li><a href="">魅族社区</a></li>
+						<li style="color:#999;">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</li>
+						<li><a href="">天猫旗舰店</a></li>
+						<li style="color:#999;">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</li>
+						<li><a href="">问题反馈</a></li>
+						<li style="color:#999;">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</li>
+						<li><a href="">线上销售授权名单公示</a></li>
+						<li style="color:#999;">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</li>
+						<li><a href=""><img src="./img/qi.jpg" alt="" style="margin-top:-5px">&nbsp;中文</a></li>
+					</ul>
+				<!-- 底部下半部分左边下边 -->
+					<div class="zuoxia">
+						<span style="float:left;line-height:35px">©2018 Meizu Telecom Equipment Co., Ltd. All rights reserved. </span>
+						<a href="" class="a1">粤ICP备13003602号</a>
+						<a href="" class="a2">合字B2-20170010</a>
+						<a href="" class="a2">营业执照</a> 
+						<a href="" class="a2">法律声明</a>
+						<span style="float: left;margin-left:10px;line-height:35px;font-size:12px"><img src="./img/bt-10.png" alt="" style="margin-top:-4px;">&nbsp;粤公网安备 44049102496009 号&nbsp;</span>
+						<ul class="list-unstyled ul-zx">&nbsp;
+							<li class="li3" style="background:url(./img/san.jpg) no-repeat -46px 0px;"></li>
+							<li class="li2" style="background:url(./img/san.jpg) no-repeat -23px 0px;"></li>
+							<li class="li1" style="background:url(./img/san.jpg) no-repeat ;"></li>
+						</ul>
+				
+					</div>
+				</div>
+			<!-- 底部下半部分右边 -->
+				<div class="you">
+					<ul class="list-unstyled you1">
+						<li class="li1"><img src="./img/weibo.png" alt=""></li>
+						<li class="li2"><img src="./img/weixin.png" alt=""></li>
+						<li class="li3"><img src="./img/kongjian.png" alt=""></li>
+					</ul>
+				</div>
+				
+			</div>
+			<br><br>
+		</div>
+	</div>
+</div>	
+	<script type="text/javascript" src="js/index.js"></script>
+	<script src="../js/jquery-1.11.3.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+</body>
+</html>

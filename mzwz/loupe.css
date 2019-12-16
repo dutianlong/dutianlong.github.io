@@ -1,0 +1,26 @@
+.loupe{
+    position: absolute;
+
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+
+    display: none;
+    border: 1px solid #00c3f5;
+    border-radius: 3%; 
+    
+    z-index: 999;
+    background: #fff;
+}
+
+.loupe img{
+    position: relative;
+}
+
+.move{
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAMAAABFaP0WAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAGUExURT1uzv///62t27cAAAACdFJOU/8A5bcwSgAAABBJREFUeNpiYGBkYGQECDAAAA0ABMZIs2EAAAAASUVORK5CYII=);
+    position: absolute;
+    display: none;
+    border-radius: 3%;
+    z-index: 999;
+}
