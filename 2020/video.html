@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/video.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<script src="js/jquery-3.0.0.min.js"></script>
+	<script>
+	$(function(){
+		//点击按钮播放和暂停
+		var video = $('video')[0];
+		$('.switch').click(function(){
+			if(video.paused) {
+				video.play();
+			}else{
+				video.pause();		
+			}
+		/*设置标签的样式  fa-pause:暂停  fa-play：播放*/
+		$(this).toggleClass("fa-play fa-pause");
+		});
+		//全屏操作
+		$('.expand').click(function(){
+			//能力测试
+			if(video.requestFullScreen){
+                video.requestFullScreen();
+            }
+            else if(video.webkitRequestFullScreen){
+                video.webkitRequestFullScreen();
+            }
+            else if(video.mozRequestFullScreen){
+                video.mozRequestFullScreen();
+            }
+            else if(video.msRequestFullScreen){
+                video.msRequestFullScreen();
+            }
+
+		});
+		//显示时长,当视频文件可以播放时才触发下面的事件
+	function getTime(time) {
+			var hours = Math.floor(time/3600);
+			hours = hours<10?"0"+hours:hours;
+			var mins = Math.floor(time%3600/60);
+			mins = mins<10?"0"+mins:mins;
+			var seconds = Math.floor(time%60);
+			seconds = seconds<10?"0"+seconds:seconds;
+			var tag = hours+ ":" + mins + ":" + seconds;
+			return tag;
+	}
+
+	video.function(){
+		video.style.display="block";	
+		var total= video.duration;
+		$(".totalTime").html(getTime(total));
+		
+	}
+	/*实现播放过程中的业务逻辑，当视频播放时会触发ontimeupdate事件*/
+	video.function(){
+ 		/*1.获取当前的播放时间*/
+        var current=video.currentTime;
+        $(".currentTime").html(getTime(current));
+        /*设置当前播放进度条样式  0.12>>0.12*100=12+%>12%*/
+            var percent=current/video.duration*100+"%";
+            $(".elapse").css("width",percent);
+	}
+	$('.bar').click(function(e){
+		var offset = e.offsetX;
+		var percent = offset / $(this).width();
+		console.log(percent);
+		var current = percent * video.duration;
+		video.currentTime = current;
+		percent=current/video.duration*100+"%";
+        $(".elapse").css("width",percent);
+	});
+	video.onended = function(){
+		video.currentTime = 0;
+        $(".switch").removeClass("fa-pause").addClass("fa-play");
+	}
+});
+	</script>
+</head>
+<body>
+<div class="player">
+	<video src="mp4/chrome.mp4"></video>
+	<div class="controls">
+		<a href="javascript:;" class="switch fa fa-play"></a>
+        <a href="javascript:;" class="expand fa fa-expand"></a>
+        <div class="progress">
+            <div class="bar"></div>
+            <div class="loaded"></div>
+            <div class="elapse"></div>
+        </div>
+        <div class="time">
+            <span class="currentTime">00:00:00</span>
+            \
+            <span class="totalTime">00:00:00</span>
+        </div>
+	</div>
+</div>
+</body>
+</html>
