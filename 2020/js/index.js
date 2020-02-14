@@ -1,30 +1,30 @@
 // window.onload = function(){
 // 			alert("(◕ˇ∀ˇ◕)欢迎浏览我的官网(◕ˇ∀ˇ◕)");
 // 		}
-		$(document).ready(function() {
-			var flag=1;
-			$(".top11").click(function(event) {
-				if(flag==1)
-				{
-					$(this).addClass('music');
-					$(".bottom11").addClass('ro');
+		// $(document).ready(function() {
+		// 	var flag=1;
+		// 	$(".top11").click(function(event) {
+		// 		if(flag==1)
+		// 		{
+		// 			$(this).addClass('music');
+		// 			$(".bottom11").addClass('ro');
 
-					flag=0;
-					$("audio")[0].load();
-					$("audio")[0].play();
+		// 			flag=0;
+		// 			$("audio")[0].load();
+		// 			$("audio")[0].play();
 
-				}
-				else
-				{
-					$(this).removeClass('music');
-					flag=1;
-					$("audio")[0].pause();
-					$(".bottom11").removeClass('ro');
+		// 		}
+		// 		else
+		// 		{
+		// 			$(this).removeClass('music');
+		// 			flag=1;
+		// 			$("audio")[0].pause();
+		// 			$(".bottom11").removeClass('ro');
 
 
-				}
-			});
-		});
+		// 		}
+		// 	});
+		// });
 
 
 
@@ -34,8 +34,7 @@
 			var Deg = 360/oL;
 			var xDeg = 0,yDeg = -10,xs = 0,ys = 0,p=null;
 
-			for (var i=oL-1;i>=0;i--)
-			{
+			for (var i=oL-1;i>=0;i--){
 				
 				$('#wrap ul li').eq(i).css({
 					transition:"1s "+(oL-i)*0.15+"s transform,.5s "+(1+oL*0.15)+"s opacity",
@@ -71,4 +70,4 @@
 				},30);
 			});
 
-		});
+	});
