@@ -95,6 +95,7 @@
 
                 //加入mousemove事件
                 document.onmousemove = function (ev) {
+                // document.touchstart = function (ev) {
                     ev = ev || window.event;
                     //获取飞机实时坐标，并限制边界值
                     var left = ev.clientX - boxOffsetLeft - oImg.width/2;
